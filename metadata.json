@@ -1,0 +1,6 @@
+{
+  "name": "워크바이브 (WorkVibe) - 주·월간 보고 도우미",
+  "description": "이러닝 용역개발 담당자를 위한 데일리 업무일지, 용역 과제 진척 관리 및 주·월간 보고서 자동 생성 도구",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

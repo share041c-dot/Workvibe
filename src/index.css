@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #FBF3EA;
+  --bg-sub: #F7E6E1;
+  --bg-card: #FFFDFA;
+  --bg-hover: #F4E3D7;
+  --border-color: #EBD8CC;
+  --border-strong: #D8BFB0;
+  --text-main: #3A2E29;
+  --text-muted: #76635B;
+  --text-subtle: #9C887E;
+  --accent-rose: #A8554F;
+  --accent-rose-hover: #8F443E;
+  --accent-rose-soft: #F7E4E2;
+  --accent-sage: #447A6B;
+  --accent-sage-hover: #366356;
+  --accent-sage-soft: #E1EFEA;
+  --warn-amber: #C86D1F;
+  --warn-amber-soft: #FDF0E1;
+  --danger-red: #B93832;
+  --danger-red-soft: #FCE8E6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-main: #1C1715;
+    --bg-sub: #261F1C;
+    --bg-card: #241E1B;
+    --bg-hover: #312824;
+    --border-color: #3B302C;
+    --border-strong: #52433D;
+    --text-main: #EFE6E0;
+    --text-muted: #B5A49B;
+    --text-subtle: #87766E;
+    --accent-rose: #CE726B;
+    --accent-rose-hover: #DF867F;
+    --accent-rose-soft: #3D2322;
+    --accent-sage: #5CA18E;
+    --accent-sage-hover: #71B5A2;
+    --accent-sage-soft: #1F352F;
+    --warn-amber: #E59344;
+    --warn-amber-soft: #3B2818;
+    --danger-red: #E0625B;
+    --danger-red-soft: #3F1F1E;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.font-serif-kr {
+  font-family: "Batang", "바탕", "Nanum Myeongjo", "Noto Serif KR", Georgia, serif;
+}
+
+.font-mono-num {
+  font-family: "JetBrains Mono", "Consolas", "Courier New", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Note underline rule style for 01 업무일지 */
+.note-lined-row {
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 120ms ease;
+}
+
+.note-lined-row:hover,
+.note-lined-row:focus-within {
+  background-color: var(--bg-sub);
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
